@@ -1,9 +1,31 @@
-<!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
-	
+    <link rel="stylesheet" href="Stylesheets/stylesheet.css">
+
 </head>
 <body>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+
+<!-- app.js must be FIRST, since the component is added to it -->
+<script src="app.js"></script>
+<script src="Scripts/Controllers/home.controllers.js"></script>
+<script src="Scripts/Controllers/movies.controllers.js"></script>
+<script src="Scripts/APIs/movieAPI.js"></script>
+<!-- static navbar -->
+<div class="HomeNavbar">
+	<button href="#homePage">Home</button>
+	<button href="#moviePage" >Movie</button>
+</div>
+
+
+<!-- <ui-view></ui-view> -->
+<home></home>
+
+	
+<body>
+
 
 </body>
 </html>
