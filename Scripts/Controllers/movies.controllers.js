@@ -6,7 +6,15 @@
                 controller: homePageController,
                
 
-            });
+            })
+             .config(homePageConfig):
+
+            function moviePageConfig($stateprovider){
+                $stateprovider.state('movie', {
+                    url:'/movie',
+                    template: '<movie></movie>'
+                });
+
         function homePageController() {
             var vm = this;
 
