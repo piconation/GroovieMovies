@@ -8,13 +8,13 @@
 
 
             })
-             .config(homePageConfig):
+            //  .config(homePageConfig)
 
-            function moviePageConfig($stateprovider){
-                $stateprovider.state('movie', {
-                    url:'/movie',
-                    template: '<movie></movie>'
-                });
+            // function moviePageConfig($stateprovider){
+            //     $stateprovider.state('movie', {
+            //         url:'/movie',
+            //         template: '<movie></movie>'
+            //     });
 
         function homePageController(movieService) {
             var vm = this;
@@ -28,7 +28,7 @@
                 vm.movieName = movieName;
                 movieService.addP
             }
-            console.log(movieService);
+            // console.log(movieService);
 
             // var promise = movieService.getMovie();
             // promise.then(function (data){
@@ -37,7 +37,5 @@
             // })
 
         }
-            
     }
-
     )();

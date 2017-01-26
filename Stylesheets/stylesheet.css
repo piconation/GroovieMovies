@@ -4,20 +4,24 @@ body {
 	background-color: #dadee5;
 	font-family: Verdana, Geneva, sans-serif;
 	text-decoration: none;
-	margin: 0;
+	margin: auto;
+	background-size: 180%;
 }
 
-.Title {
+.title {
 	width: auto;
 	height: 150px;
 	font-size: 50px;
 	font-weight: bolder;
 	text-align: center;
+	padding: 20px;
 	color: black;
 	background-color: white;
+	background-image: url("http://previews.123rf.com/images/adroach/adroach0804/adroach080400007/2864037-Colorful-Flower-Spiral-Background-Stock-Vector-flower-power-vector.jpg");
+	background-position: center;
 }
 
-.HomeNavbar {
+.home-navbar {
 	color: #ffffff;
 	background-color: #1c5bed;
 	width: auto;
@@ -34,6 +38,7 @@ ul {
 
 li {
     float: left;
+    border-right: 1px solid #bbb;
 }
 
 li a {
@@ -46,5 +51,9 @@ li a {
 
 li a:hover {
     background-color: #688ee8;
+}
+
+@media screen and (max-width: 400px){
+
 }
 
