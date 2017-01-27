@@ -3,29 +3,24 @@
         angular.module('myApp')
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
-                controller: homePageController,
-               
-
-
+                controller: moviePageController
             })
-            //  .config(homePageConfig)
 
-            // function moviePageConfig($stateprovider){
-            //     $stateprovider.state('movie', {
-            //         url:'/movie',
-            //         template: '<movie></movie>'
-            //     });
 
-        function homePageController(movieService) {
+        function moviePageController(movieService) {
             var vm = this;
             // vm.movieName = movieName;
             vm.send = send;
+
+             console.log(movieService);
+
             // vm.author = author;
             // vm.released = released;
             // vm.genre = genre;
             // vm.plot = plot;
             
-                            // console.log(movieService.getMovie(movieName));
+            // console.log(movieService.getMovie(movieName));
+
 
           
             function send(movieName) {
@@ -38,6 +33,11 @@
             // console.log(author);
             // console.log(movieService.getMovie(movieName).released);
                 // console.log(movieName);
+
+                vm.movieName = movieName;
+               
+            }
+
                 // console.log(movieService.getMovie(movieName));
                                
             }
@@ -50,5 +50,6 @@
             // })
 
         }
-    }
-    )();
+            
+})();
+
