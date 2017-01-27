@@ -3,7 +3,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-
   <link rel="stylesheet" href="Stylesheets/stylesheet.css">
 </head>
 <body>
@@ -25,8 +24,6 @@
 <script src="Scripts/Controllers/home.controllers.js"></script>
 <script src="Scripts/Controllers/movies.controllers.js"></script>
 <script src="Scripts/APIs/movieAPI.js"></script>
-<!-- static navbar -->
-<div class="HomeNavbar">
 
 	<button> 
        <a ui-sref="home">Home</a>
@@ -35,12 +32,23 @@
       <a ui-sref="movie">Movies</a>
   </button>
 
+<div class="title">GROOVIE MOVIES
+</div>
+
+<!-- static navbar -->
+<div class="home-navbar">
+	<ul>
+	  <li><a class="active" href="#homepage">Home</a></li>
+	  <li><a href="#moviepage">Movies</a></li>
+	</ul>
+</div>
 
 
 
 <ui-view></ui-view>
-<!-- <movie></movie> -->
-<!-- <home></home> -->
+  
+<movie></movie>
+
 
 	Bye Everyone
 
