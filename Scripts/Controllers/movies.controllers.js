@@ -3,32 +3,33 @@
         angular.module('myApp')
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
-                controller: homePageController,
+                controller: moviePageController
                
 
 
             })
-             .config(homePageConfig):
 
-            function moviePageConfig($stateprovider){
-                $stateprovider.state('movie', {
-                    url:'/movie',
-                    template: '<movie></movie>'
-                });
+            //  .config(moviePageConfig)
 
-        function homePageController(movieService) {
+            // function moviePageConfig($stateprovider){
+            //     $stateprovider.state('movie', {
+            //         url:'/movie',
+            //         template: '<movie></movie>'
+            //     })
+
+        function moviePageController(movieService) {
             var vm = this;
             // vm.movieName = movieName;
             vm.send = send;
-            
+             console.log(movieService);
 
             function send(movieName) {
                 // body..
                 // console.log(movieName);
                 vm.movieName = movieName;
-                movieService.addP
+                // movieService.addP
             }
-            console.log(movieService);
+           
 
             // var promise = movieService.getMovie();
             // promise.then(function (data){
@@ -38,6 +39,4 @@
 
         }
             
-    }
-
-    )();
+})();
