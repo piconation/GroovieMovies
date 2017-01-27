@@ -1,6 +1,6 @@
 body {
-	background-image: images/groovie.jpg;
-	background-position: fill;
+	background-image: http://previews.123rf.com/images/adroach/adroach0804/adroach080400007/2864037-Colorful-Flower-Spiral-Background-Stock-Vector-flower-power-vector.jpg;
+	background-position: center;
 	background-color: #dadee5;
 	font-family: Verdana, Geneva, sans-serif;
 	text-decoration: none;
@@ -10,5 +10,6 @@ body {
 .HomeNavbar {
 	color: #ffffff;
 	background-color: #50ace5;
-
+	width: 100%;
+	height: 1000px;
 }
