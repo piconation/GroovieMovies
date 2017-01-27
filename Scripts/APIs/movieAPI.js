@@ -1,21 +1,46 @@
 (function () {
 
         angular.module('myApp')
+
            .service('movieService', movieService);
 
              // myApp.service("movieService", function($http)
             function movieService($http)
              {
                 var vm = this;
+                // vm.save = save;
+                // var sharedService = {};
 
-                console.log(vm.movieName);
+                // sharedService.reqestedMovieName = '';
+
+                // sharedService.prepForBroadcast = function(movieName){
+                //     this.reqestedMovieName = movieName;
+                //       this.broadcastItem();
+                //     console.log(movieName);
+                // };
+                
+                // sharedService.broadcastItem = function(){
+                //     $rootScope.$broadcast('handleBradcast');
+                // }
+
+                // function save(movieName){
+                //     // console.log(movieName);
+                // }
+                // console.log(vm.movieName);
                 // var deferred = $q.defer();
                 // need to get movie varible to are service
                 // $http.get('http://www.omdbapi.com/?t=' +  +);
-                $http.get('http://www.omdbapi.com/?t=' + 'starwars')
-                .success(function(response) {
-                    vm.movieSpecs = response;
-                });
+                return{
+                 getMovie: function(movieName){
+                    return $http.get('http://www.omdbapi.com/?t=' + movieName).success(function(response){
+                        console.log(response.Actors);
+                    })
+                 }
+                };
+                // $http.get('http://www.omdbapi.com/?t=' + "starwars")
+                // .success(function(response) {
+                //     vm.movieSpecs = response;
+                // });
            }
             
     })();

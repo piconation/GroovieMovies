@@ -17,7 +17,7 @@
                 // body..
                 // console.log(movieName);
                 vm.movieName = movieName;
-                movieService.addP
+               console.log(movieService.getMovie(movieName));
             }
             console.log(movieService);
 
