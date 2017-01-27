@@ -1,7 +1,6 @@
 <html ng-app="myApp">
 <head>
     <link rel="stylesheet" href="Stylesheets/stylesheet.css">
-
 </head>
 <body>
 
@@ -13,15 +12,32 @@
 <script src="Scripts/Controllers/home.controllers.js"></script>
 <script src="Scripts/Controllers/movies.controllers.js"></script>
 <script src="Scripts/APIs/movieAPI.js"></script>
-<!-- static navbar -->
-<div class="HomeNavbar">
-	<button> <a href="#HomePage">Home </a></button>
-	<button> <a href="#MoviePage" >Movie</a></button>
+
+<div class="title-banner">
+	<div class="title-words">
+		GROOVIE MOVIES
+	</div>
 </div>
+
+<!-- static navbar -->
+<div class="home-navbar">
+	<ul>
+	  <li><a class="active" href="#homepage">Home</a></li>
+	  <li><a href="#moviepage">Movies</a></li>
+	</ul>
+</div>
+
+<div class="main">
+<div class="main-body">
 
 
 <!-- <ui-view></ui-view> -->
-<movie></movie>
+<home></home>
 
+	Bye Everyone
+
+</div>
+</div>
 </body>
 </html>
+
