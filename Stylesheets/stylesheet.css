@@ -1,32 +1,66 @@
 body {
-	background-image: url("http://previews.123rf.com/images/adroach/adroach0804/adroach080400007/2864037-Colorful-Flower-Spiral-Background-Stock-Vector-flower-power-vector.jpg");
-	background-position: center;
 	background-color: #dadee5;
 	font-family: Verdana, Geneva, sans-serif;
 	text-decoration: none;
 	margin: auto;
-	background-size: 180%;
 }
 
-.title {
-	width: auto;
-	height: 150px;
+.title-banner {
+	background-image: url("http://previews.123rf.com/images/adroach/adroach0804/adroach080400007/2864037-Colorful-Flower-Spiral-Background-Stock-Vector-flower-power-vector.jpg");
+	background-size: 120%;
+	background-position: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.title-words {
+	font-weight: 600;
+	color: #000000;
+	background-color: #ffffff;
+	border-radius: 50px;
 	font-size: 50px;
-	font-weight: bolder;
 	text-align: center;
 	padding: 20px;
-	color: black;
-	background-color: white;
-	background-image: url("http://previews.123rf.com/images/adroach/adroach0804/adroach080400007/2864037-Colorful-Flower-Spiral-Background-Stock-Vector-flower-power-vector.jpg");
-	background-position: center;
+	opacity: 0.8;
 }
 
 .home-navbar {
 	color: #ffffff;
-	background-color: #1c5bed;
+	background-color: #0043ff;
 	width: auto;
 	height: 60px;
 }
+
+.main {
+	/*background-image: url("http://data.whicdn.com/images/67893222/large.jpg");*/
+	background-position: top;
+	background-size: 150%;
+}
+
+/*.main-body {
+	font-weight: 600;
+	color: #000000;
+	background-color: #f9f9f9;
+	padding: 20px;
+	opacity: 0.7;
+	height: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#movie-input {
+	opacity: 1;
+}
+
+#enter {
+    background-color: #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 400;
+}*/
 
 ul {
     list-style-type: none;
