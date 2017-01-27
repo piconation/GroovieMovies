@@ -9,14 +9,14 @@
 
             })
             
-            .config(homePageConfig):
+            // .config(homePageConfig)
 
-            function homePageConfig($stateprovider){
-                $stateprovider.state('home', {
-                    url:'/home',
-                    template: '<home></home>'
-                });
-            }
+            // function homePageConfig($stateprovider){
+            //     $stateprovider.state('home', {
+            //         url:'/home',
+            //         template: '<home></home>'
+            //     });
+            // }
 
         function homePageController() {
             var vm = this;
