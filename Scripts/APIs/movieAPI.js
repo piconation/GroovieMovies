@@ -33,8 +33,9 @@
                 return{
                  getMovie: function(movieName){
                     return $http.get('http://www.omdbapi.com/?t=' + movieName).success(function(response){
-                        console.log(response.Actors);
-                    })
+                        var actors = response.Actors;
+                        console.log(actors);
+                    });
                  }
                 };
                 // $http.get('http://www.omdbapi.com/?t=' + "starwars")

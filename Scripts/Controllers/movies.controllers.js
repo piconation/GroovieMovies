@@ -11,19 +11,32 @@
             var vm = this;
             // vm.movieName = movieName;
             vm.send = send;
+            // vm.author = author;
+            // vm.released = released;
+            // vm.genre = genre;
+            // vm.plot = plot;
             
+                            // console.log(movieService.getMovie(movieName));
 
+          
             function send(movieName) {
-                // body..
-                // console.log(movieName);
-                vm.movieName = movieName;
-               console.log(movieService.getMovie(movieName));
-            }
-            console.log(movieService);
+                console.log(movieService.getMovie(movieName));
+            //       author = movieService.getMovie(movieName).author;
+            // released = movieService.getMovie(movieName).released;
+            // genre = movieService.getMovie(movieName).genre;
+            // plot = movieService.getMovie(movieName).plot;
 
+            // console.log(author);
+            // console.log(movieService.getMovie(movieName).released);
+                // console.log(movieName);
+                // console.log(movieService.getMovie(movieName));
+                               
+            }
+            // console.log(movieService);
+        
             // var promise = movieService.getMovie();
             // promise.then(function (data){
-            //     $scope.moviemovie = movie;
+            //     vm.moviemovie = movie;
             //     console.log(moviemovie);
             // })
 
