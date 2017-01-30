@@ -1,29 +1,56 @@
 <html ng-app="myApp">
 <head>
-    <link rel="stylesheet" href="Stylesheets/stylesheet.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="Stylesheets/stylesheet.css">
 </head>
 <body>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+
+
+
 <!-- app.js must be FIRST, since the component is added to it -->
 <script src="app.js"></script>
 <script src="Scripts/Controllers/home.controllers.js"></script>
 <script src="Scripts/Controllers/movies.controllers.js"></script>
 <script src="Scripts/APIs/movieAPI.js"></script>
-<!-- static navbar -->
-<div class="HomeNavbar">
-	<button href="#homePage">Home</button>
-	<button href="#moviePage" >Movie</button>
+
+
+<div class="title-banner">
+	<div class="title-words">
+		GROOVIE MOVIES
+	</div>
 </div>
 
+<!-- static navbar -->
+<div class="home-navbar">
+	<ul>
+	  <li><a class="active" ui-sref="home">Home</a></li>
+	  <li><a ui-sref="movie">Movies</a></li>
+	</ul>
+</div>
 
-<!-- <ui-view></ui-view> -->
-<home></home>
+<div class="main">
+<div class="main-body">
 
-	Hi Everyone
+<ui-view></ui-view>
+  
+<!-- <movie></movie> -->
 
+	Bye Everyone
+
+</div>
+</div>
 </body>
 </html>
+
