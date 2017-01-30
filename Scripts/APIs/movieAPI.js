@@ -45,11 +45,10 @@
                 // });
              }
 
-                $http.get('http://www.omdbapi.com/?t=' + 'starwars')
-                .success(function(response) {
-                    vm.movieSpecs = response;
-                });
-             }
-
+                // $http.get('http://www.omdbapi.com/?t=' + 'starwars')
+                // .success(function(response) {
+                //     vm.movieSpecs = response;
+                // });
+             
             
     })();
