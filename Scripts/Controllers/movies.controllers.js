@@ -3,39 +3,53 @@
         angular.module('myApp')
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
-                controller: homePageController,
-               
-
-
+                controller: moviePageController
             })
-            //  .config(homePageConfig)
 
-            // function moviePageConfig($stateprovider){
-            //     $stateprovider.state('movie', {
-            //         url:'/movie',
-            //         template: '<movie></movie>'
-            //     });
 
-        function homePageController(movieService) {
+        function moviePageController(movieService) {
             var vm = this;
             // vm.movieName = movieName;
             vm.send = send;
-            
 
+             console.log(movieService);
+
+            // vm.author = author;
+            // vm.released = released;
+            // vm.genre = genre;
+            // vm.plot = plot;
+            
+            // console.log(movieService.getMovie(movieName));
+
+
+          
             function send(movieName) {
-                // body..
+                console.log(movieService.getMovie(movieName));
+            //       author = movieService.getMovie(movieName).author;
+            // released = movieService.getMovie(movieName).released;
+            // genre = movieService.getMovie(movieName).genre;
+            // plot = movieService.getMovie(movieName).plot;
+
+            // console.log(author);
+            // console.log(movieService.getMovie(movieName).released);
                 // console.log(movieName);
+
                 vm.movieName = movieName;
-                movieService.addP
+               
+            }
+
+                // console.log(movieService.getMovie(movieName));
+                               
             }
             // console.log(movieService);
 
             // var promise = movieService.getMovie();
             // promise.then(function (data){
-            //     $scope.moviemovie = movie;
+            //     vm.moviemovie = movie;
             //     console.log(moviemovie);
             // })
 
         }
-    }
-    )();
+            
+})();
+
