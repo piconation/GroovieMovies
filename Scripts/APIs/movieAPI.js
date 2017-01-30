@@ -16,6 +16,6 @@
                 .success(function(response) {
                     vm.movieSpecs = response;
                 });
-           }
+             }
             
     })();
