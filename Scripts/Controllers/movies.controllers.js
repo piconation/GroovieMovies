@@ -3,16 +3,18 @@
         angular.module('myApp')
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
-                controller: moviePageController
+                controllerAs: moviePageController
             })
-
+        
 
         function moviePageController(movieService) {
+            console.log('this is a console log');
             var vm = this;
+
             // vm.movieName = movieName;
             vm.send = send;
 
-             console.log(movieService);
+             console.log('movieService');
 
             // vm.author = author;
             // vm.released = released;
@@ -25,7 +27,7 @@
           
             function send(movieName) {
                 console.log(movieService.getMovie(movieName));
-            //       author = movieService.getMovie(movieName).author;
+            // author = movieService.getMovie(movieName).author;
             // released = movieService.getMovie(movieName).released;
             // genre = movieService.getMovie(movieName).genre;
             // plot = movieService.getMovie(movieName).plot;
@@ -49,7 +51,7 @@
             //     console.log(moviemovie);
             // })
 
-        }
+        
             
 })();
 

@@ -25,12 +25,6 @@
 <script src="Scripts/Controllers/movies.controllers.js"></script>
 <script src="Scripts/APIs/movieAPI.js"></script>
 
-	<button> 
-       <a ui-sref="home">Home</a>
-  </button>
-	<button> 
-      <a ui-sref="movie">Movies</a>
-  </button>
 
 <div class="title-banner">
 	<div class="title-words">
@@ -41,8 +35,8 @@
 <!-- static navbar -->
 <div class="home-navbar">
 	<ul>
-	  <li><a class="active" href="#homepage">Home</a></li>
-	  <li><a href="#moviepage">Movies</a></li>
+	  <li><a class="active" ui-sref="home">Home</a></li>
+	  <li><a ui-sref="movie">Movies</a></li>
 	</ul>
 </div>
 
@@ -51,7 +45,7 @@
 
 <ui-view></ui-view>
   
-<movie></movie>
+<!-- <movie></movie> -->
 
 	Bye Everyone
 
