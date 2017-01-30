@@ -30,6 +30,7 @@
                 // var deferred = $q.defer();
                 // need to get movie varible to are service
                 // $http.get('http://www.omdbapi.com/?t=' +  +);
+
                 return{
                  getMovie: function(movieName){
                     return $http.get('http://www.omdbapi.com/?t=' + movieName).success(function(response){
@@ -42,6 +43,13 @@
                 // .success(function(response) {
                 //     vm.movieSpecs = response;
                 // });
-           }
+             }
+
+                $http.get('http://www.omdbapi.com/?t=' + 'starwars')
+                .success(function(response) {
+                    vm.movieSpecs = response;
+                });
+             }
+
             
     })();
