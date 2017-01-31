@@ -26,7 +26,6 @@
             var thePlot = $scope.thePlot;
             var theYear = $scope.theYear;
 
-
           
             function send(movieName) {
                 // this is calling are service and giveing us accsess to the varibles 

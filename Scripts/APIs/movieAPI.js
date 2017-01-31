@@ -6,6 +6,7 @@
             function movieService($http){
                 var vm = this;
                // return is retrun api call to movieName
+
                 return{
 
                     getMovie: function(movieName){
@@ -21,5 +22,6 @@
                 };
         
            }
+
             
     })();
