@@ -5,7 +5,7 @@
                 templateUrl: "Templates/home.template.html",
                 controller: homePageController,
 
-                constollerAs: 'vm'
+                controllerAs: 'vm'
 
         })
             .config(homePageConfig);
@@ -17,13 +17,13 @@
                 });
             }
   
-        function homePageController() {
+        function homePageController($scope) {
             var vm = this;
             console.log("in homecontroller");
-            vm.dataArray = [
-            { src:'https://images-na.ssl-images-amazon.com/images/I/51a3mzh6ymL.jpg' },
-            { src:'https://images-na.ssl-images-amazon.com/images/I/71AttSsJg3L._SY550_.jpg' },
-            { src:'http://www.panicposters.com/media/catalog/product/cache/1/image/f63dc5ec28f3175f8a7f615bd217eb71/p/p/pp31453-raiders-of-the-lost-ark-poster.jpg' }
+            $scope.dataArray = [
+            { src:'http://moviereviews.s3.amazonaws.com/2015/09/05/08/38/55/6/grh3hjMsUJwIdZw92Li4tOGn3yK.jpg' },
+            { src:'https://jedi-bibliothek.de/blog/wp-content/uploads/2015/07/SWTrilogyBarnesNobleHCPoster.jpg' },
+            { src:'http://cdn.gelestatic.it/deejay/www/2015/09/RaidersOfTheLostArk.jpg' }
             ];    
         }
             
