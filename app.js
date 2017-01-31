@@ -2,32 +2,34 @@
 
     // this CREATES the myApp module (because it has the second, array parameter)
 
-   angular.module('myApp', ['ui.router', 'ngMaterial', 'jkAngularCarousel'])
-       // .config(myAppConfig);
+
+   angular.module('myApp', ['ui.router', 'ngMaterial', 'jkAngularCarousel', 'ngMessages'])
 
 
-       .config(function($urlRouterProvider, $stateProvider){
-           $urlRouterProvider.otherwise('/homePage')
+        .config(function($urlRouterProvider, $stateProvider){
+        	$urlRouterProvider.otherwise('/home');
 
-             $stateProvider
-                .state('home', {
-                  url: "/homePage",
-                  templateUrl: "Templates/home.template.html",
-                  controllerAs: 'homePageController',
-                  // controllerAs: "homePageCtrl"
-                })
-            
-                .state('movie', {
-                  url: "/moviePage",
-                  templateUrl: "Templates/movie.template.html",  
-                  controllerAs: 'moviePageController',
-                  // controllerAs: "moviePageCtrl"
-              })
+        	$stateProvider
+        		.state('main',{
+        			url: "/main",
+        			template: '<home></home>'
+        		})
 
-                function myAppConfig($urlRouterProvider){
-                    $urlRouterProvider.otherwise('/home');
-                }
+     //    	  $stateProvider
+			  //   .state('home', {
+			  //     url: "/homePage",
+			  //     templateUrl: "Templates/home.template.html",
+			  //     controller: 'homePageController',
+			  //     // controllerAs: "homePageCtrl"
+			  //   })
+			 
+			  //   .state('movie', {
+			  //     url: "/moviePage",
+			  //     templateUrl: "Templates/movie.template.html",  
+			  //     controller: 'moviePageController',
+			  //     // controllerAs: "moviePageCtrl"
+			  // })
 
-        });    
-        
+		});	
+		
 })();
