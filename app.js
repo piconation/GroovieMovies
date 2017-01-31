@@ -2,26 +2,34 @@
 
     // this CREATES the myApp module (because it has the second, array parameter)
 
-    angular.module('myApp', ['ui.router', 'ngMaterial'])
+    angular.module('myApp', ['ui.router'])
         // .config(myAppConfig);
 
-        function myAppConfig($urlRouterProvider){
-        	$urlRouterProvider.otherwise('/home');
-        }
 
         .config(function($urlRouterProvider, $stateProvider){
-        	$urlRouterProvider.otherwise('/homePage')
+        	$urlRouterProvider.otherwise('/home');
 
-        	  $stateProvider
-			    .state('home', {
-			      url: "/homePage",
-			      templateUrl: "Templates/home.template.html"
-			    })
+        	$stateProvider
+        		.state('main',{
+        			url: "/main",
+        			template: '<home></home>'
+        		})
+
+     //    	  $stateProvider
+			  //   .state('home', {
+			  //     url: "/homePage",
+			  //     templateUrl: "Templates/home.template.html",
+			  //     controller: 'homePageController',
+			  //     // controllerAs: "homePageCtrl"
+			  //   })
 			 
-			    .state('movie', {
-			      url: "/moviePage",
-			      templateUrl: "Templates/movie.template.html"  	
-				})
-		});
+			  //   .state('movie', {
+			  //     url: "/moviePage",
+			  //     templateUrl: "Templates/movie.template.html",  
+			  //     controller: 'moviePageController',
+			  //     // controllerAs: "moviePageCtrl"
+			  // })
+
+		});	
 		
 })();
