@@ -19,13 +19,18 @@
         function moviePageController(movieService, $scope) {
             var vm = this;
             vm.send = send;
+
+            vm.title4 = 'Warn';
+             console.log('movieService');
+
+
             // this is doing nothing
             var theActors = $scope.theActors;
             var theGenre = $scope.theGenre;
             var theTitle = $scope.theTitle;
             var thePlot = $scope.thePlot;
             var theYear = $scope.theYear;
-
+          
           
             function send(movieName) {
                 // this is calling are service and giveing us accsess to the varibles 

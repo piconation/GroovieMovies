@@ -4,7 +4,8 @@ This is the movie page.
 	<form ng-submit="$ctrl.send(movieName)">
 		<b>Enter Movie</b>
 		<input id="movie-input" placeholder=" IM a Movie" ng-model="movieName">
-		<button id="enter" type="submit">Enter</button>
+		<!-- <button id="enter" type="submit">Enter</button> -->
+		<md-button id="enter" type="submit" class="md-warn md-raised md-hue-3">Enter</md-button>
 	</form>
 	<!-- these are calling the pulled variables from the controler -->
 	
@@ -38,7 +39,9 @@ This is the movie page.
 	
 
 </div>
-
+	<!-- <div>
+		 <md-button class="md-warn md-raised md-hue-2">Warn Hue 2</md-button>
+	</div> -->
 <div>
 	<!-- {{ author }}
 	{{ plot }} -->

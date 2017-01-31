@@ -2,9 +2,8 @@
 
     // this CREATES the myApp module (because it has the second, array parameter)
 
-
-    angular.module('myApp', ['ui.router'])
-        // .config(myAppConfig);
+   angular.module('myApp', ['ui.router'])
+   // ['ui.router', 'ngMaterial', 'ngMessages']
 
 
         .config(function($urlRouterProvider, $stateProvider){
@@ -33,5 +32,4 @@
 
 		});	
 		
-
 })();
