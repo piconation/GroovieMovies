@@ -1,4 +1,3 @@
-
 This is the movie page.
 
 <div>
@@ -8,6 +7,37 @@ This is the movie page.
 		<!-- <button id="enter" type="submit">Enter</button> -->
 		<md-button id="enter" type="submit" class="md-warn md-raised md-hue-3">Enter</md-button>
 	</form>
+	<!-- these are calling the pulled variables from the controler -->
+	
+	<div class="title" >
+		<b>Title:</b>
+		{{ theTitle }}
+	</div>
+
+	<div class="genre">
+		<b>Genre:</b>
+		{{ theGenre }}
+	</div>
+
+	<div class="year" >
+		<b>Year:</b>
+		{{ theYear }}
+	</div>
+
+	<div class="plot" >
+		<b>Plot</b>
+		{{ thePlot }}
+	</div>
+	
+	<div class="actors">
+		<b>Actor:</b>
+		{{ theActors }}
+	</div>
+	
+	
+	
+	
+
 </div>
 	<!-- <div>
 		 <md-button class="md-warn md-raised md-hue-2">Warn Hue 2</md-button>
@@ -16,4 +46,3 @@ This is the movie page.
 	<!-- {{ author }}
 	{{ plot }} -->
 </div>
-

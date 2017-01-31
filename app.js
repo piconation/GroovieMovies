@@ -4,31 +4,32 @@
 
    angular.module('myApp', ['ui.router'])
    // ['ui.router', 'ngMaterial', 'ngMessages']
-       // .config(myAppConfig);
 
 
-       .config(function($urlRouterProvider, $stateProvider){
-           $urlRouterProvider.otherwise('/homePage')
+        .config(function($urlRouterProvider, $stateProvider){
+        	$urlRouterProvider.otherwise('/home');
 
-             $stateProvider
-                .state('home', {
-                  url: "/homePage",
-                  templateUrl: "Templates/home.template.html",
-                  controller: 'homePageController',
-                  // controllerAs: "homePageCtrl"
-                })
-            
-                .state('movie', {
-                  url: "/moviePage",
-                  templateUrl: "Templates/movie.template.html",  
-                  controller: 'moviePageController',
-                  // controllerAs: "moviePageCtrl"
-              })
+        	$stateProvider
+        		.state('main',{
+        			url: "/main",
+        			template: '<home></home>'
+        		})
 
-                // function myAppConfig($urlRouterProvider){
-                //     $urlRouterProvider.otherwise('/home');
-                // }
+     //    	  $stateProvider
+			  //   .state('home', {
+			  //     url: "/homePage",
+			  //     templateUrl: "Templates/home.template.html",
+			  //     controller: 'homePageController',
+			  //     // controllerAs: "homePageCtrl"
+			  //   })
+			 
+			  //   .state('movie', {
+			  //     url: "/moviePage",
+			  //     templateUrl: "Templates/movie.template.html",  
+			  //     controller: 'moviePageController',
+			  //     // controllerAs: "moviePageCtrl"
+			  // })
 
-        });    
-        
+		});	
+		
 })();
