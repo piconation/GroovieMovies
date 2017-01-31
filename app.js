@@ -2,7 +2,7 @@
 
     // this CREATES the myApp module (because it has the second, array parameter)
 
-   angular.module('myApp', ['ui.router', 'carousel'])
+   angular.module('myApp', ['ui.router', 'ngMaterial', 'jkAngularCarousel'])
        // .config(myAppConfig);
 
 
