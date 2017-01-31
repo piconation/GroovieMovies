@@ -3,6 +3,7 @@
     // this CREATES the myApp module (because it has the second, array parameter)
 
    angular.module('myApp', ['ui.router'])
+   // ['ui.router', 'ngMaterial', 'ngMessages']
        // .config(myAppConfig);
 
 
@@ -13,20 +14,20 @@
                 .state('home', {
                   url: "/homePage",
                   templateUrl: "Templates/home.template.html",
-                  controllerAs: 'homePageController',
+                  controller: 'homePageController',
                   // controllerAs: "homePageCtrl"
                 })
             
                 .state('movie', {
                   url: "/moviePage",
                   templateUrl: "Templates/movie.template.html",  
-                  controllerAs: 'moviePageController',
+                  controller: 'moviePageController',
                   // controllerAs: "moviePageCtrl"
               })
 
-                function myAppConfig($urlRouterProvider){
-                    $urlRouterProvider.otherwise('/home');
-                }
+                // function myAppConfig($urlRouterProvider){
+                //     $urlRouterProvider.otherwise('/home');
+                // }
 
         });    
         
