@@ -5,6 +5,18 @@ body {
 	margin: auto;
 }
 
+@media screen and (max-width: 450px) {
+		.title-words {
+			font-size: 40px;
+		}
+	}
+
+@media screen and (max-width: 400px) {
+		.title-words {
+			font-size: 30px;
+		}
+	}
+
 .title-banner {
 	background-image: url("http://previews.123rf.com/images/adroach/adroach0804/adroach080400007/2864037-Colorful-Flower-Spiral-Background-Stock-Vector-flower-power-vector.jpg");
 	background-size: 120%;
@@ -36,7 +48,7 @@ body {
 .main {
 
 	background-image: url("https://unicityinternationalblog.files.wordpress.com/2012/12/unicity-logo.jpg");
-	background-position: center;
+	background-position: center top;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 100%;
@@ -90,7 +102,5 @@ li a:hover {
     background-color: #688ee8;
 }
 
-@media screen and (max-width: 400px){
 
-}
 
