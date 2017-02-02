@@ -16,16 +16,18 @@
                 });
             }
 
-        function moviePageController(movieService, $scope, $mdDialog, toastr) {
+
+        function moviePageController(movieService, flickService, $scope) {
+
             var vm = this;
             vm.send = send; 
 
             vm.title4 = 'Warn';
-             console.log(movieService);
 
-            vm.toastr = toastr;
+             console.log('movieService');
+             console.log('flickService');
 
-
+         
             // this is doing nothing
             var theActors = $scope.theActors;
             var theGenre = $scope.theGenre;
