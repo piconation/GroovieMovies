@@ -16,13 +16,14 @@
                 });
             }
 
-        function moviePageController(movieService, $scope) {
+        function moviePageController(movieService, flickService, $scope) {
             var vm = this;
             vm.send = send; 
             vm.random = random;
 
             vm.title4 = 'Warn';
              console.log('movieService');
+             console.log('flickService');
 
 
             // this is doing nothing
@@ -45,12 +46,16 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
-               }); 
+                }); 
+            }
 
-                   function random(movieFlick) {
-                    // this is calling are service and giveing us accsess to the varibles 
-                         movieService.random(movieFlick).success(function(response){
-                            var theFlick = random;
+                    function random(movieFlick) {
+                        // this is calling are service and giveing us accsess to the varibles 
+                        flickService.random(movieFlick).success(function(response){
+                            var theFlick = response;
+
+                            console.log(response)
+                            console.log(theFlick.Actors);
 
                         // this is setting varibles to are scope from service
                         $scope.theActors = theFlick.Actors;
@@ -58,11 +63,10 @@
                         $scope.theTitle = theFlick.Title;
                         $scope.thePlot = theFlick.Plot;
                         $scope.theYear = theFlick.Year;
-                   });
-
-               }       
-            } 
-                              
-        }      
+                       });
+                }   
+                
+        }        
+    
 })();
 
