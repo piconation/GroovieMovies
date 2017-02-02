@@ -1,4 +1,4 @@
-This is the movie page.
+
 <div class="movie-page">
 	<div>
 		<form ng-submit="$ctrl.send(movieName)">
@@ -7,9 +7,9 @@ This is the movie page.
 			<!-- <button id="enter" type="submit">Enter</button> -->
 			<md-button id="enter" type="submit" class="md-warn md-raised md-hue-3">Enter</md-button>
 		</form>
-		<md-button ng-click="showSimpleToast()">
+		<!-- <md-button ng-click="showSimpleToast()">
 	        Show Simple
-	      </md-button>
+	      </md-button> -->
 		<!-- these are calling the pulled variables from the controler -->
 		
 		<div class="title" >
@@ -37,15 +37,44 @@ This is the movie page.
 			{{ theActors }}
 		</div>
 		
-		
-		
-		
+	</div>
 
-	</div>
-		<!-- <div>
-			 <md-button class="md-warn md-raised md-hue-2">Warn Hue 2</md-button>
-		</div> -->
+
+
 	<div>
-		<!-- {{ author }}
-		{{ plot }} -->
-	</div>
+		<form ng-submit="$ctrl.random(movieFlick)">
+			<b>Random Movie</b>
+			<input id="random-input" ng-model="movieFlick">
+			
+			<md-button style= "background-color: green" id="enter" type="submit" class="md-warn md-raised md-hue-3">Grovie Flicks</md-button>
+		</form>
+
+		<div class="title" >
+
+		<b>Title:</b>
+		{{ theTitle }}
+		</div>
+
+		<div class="year" >
+			<b>Year:</b>
+			{{ theYear }}
+		</div>
+
+		<div class="actors">
+			<b>Actor:</b>
+			{{ theActors }}
+		</div>
+
+		<div class="genre">
+			<b>Genre:</b>
+			{{ theGenre }}
+		</div>
+
+		<div class="plot" >
+			<b>Plot:</b>
+			{{ thePlot }}
+		</div>
+		
+		</div>
+</div>
+

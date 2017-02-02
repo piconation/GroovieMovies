@@ -14,17 +14,17 @@
                         return $http.get('http://www.omdbapi.com/?t=' + movieName)
                         .success(function(response){
                         var actors = response.Actors;
-                        // console.log(response);
+                        console.log(response);
                         var theMovie = response;
                         // console.log(theMovie.Actors);
                         });
-                            // console.log(go here);
 
+// <<<<<<< HEAD
                         
+// =======
+// >>>>>>> d613cf6449270cea2976dc3620a1a3c1b4f63791
                     }
 
                 };
             }          
     })();
-
-    
