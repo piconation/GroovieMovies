@@ -4,7 +4,7 @@
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
                 controller: moviePageController,
-                constollerAs: 'vm'
+                controllerAs: 'vm'
                 
             })
             .config(moviePageConfig);
@@ -19,10 +19,10 @@
         function moviePageController(movieService, $scope, $mdDialog, toastr) {
             var vm = this;
             vm.send = send; 
-            vm.random = random;
 
             vm.title4 = 'Warn';
              console.log(movieService);
+
             vm.toastr = toastr;
 
             // this is doing nothing
@@ -46,6 +46,7 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
+
                });   
     //              $scope.showSimpleToast = function() {
     // var pinTo = $scope.getToastPosition();
@@ -58,8 +59,8 @@
     // );
   // };
 
+
             } 
-                              
-        }      
+                                   
 })();
 
