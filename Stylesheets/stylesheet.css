@@ -36,19 +36,17 @@ body {
 }
 
 .main {
-
 	background-position: center top;
 	background-size: 100%;
 	background-color: #3d3d3d;
 	height: auto;
-	width: auto;
 	background-repeat: no-repeat;
 }
 
 .main-body {
 	font-weight: 400;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 4vw;
+	font-size: 22;
 	color: #ffffff;
 	padding: 20px;
 	height: 100%;
@@ -75,29 +73,33 @@ md-card {
   margin-bottom: 5%;
   left: 0;
   right: 0;
-  border-radius: 50px;
+  border-radius: 111px;
+  background-color: #FF6B00;
+}
+.card1 {
+
+height: 355px;
+width: 99%
 }
 
-md-card2 {
+.card2 {
   margin-top: 5%;
   margin-bottom: 5%;
   height: 20%;
   width: auto;
   padding: 2%;
-  background-color: #ffee82;
   border-width: 1px;
   border-style: solid;
   border-color: #000000;
   border-radius: 50px;
 }
 
-md-card3 {
+.card3 {
   margin-top: 5%;
   margin-bottom: 5%;
   height: 20%;
   width: auto;
   padding: 2%;
-  background-color: #ffee82;
   border-width: 1px;
   border-style: solid;
   border-color: #000000;
@@ -124,10 +126,17 @@ li a {
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
+    font-size: 2vw;
 }
 
 li a:hover {
     background-color: #8eb6ff;
 }
+.md-padding {
+	background-color: #3d3d3d;
+}
+.movieform {
+	/*color: white;*/
+	
 
-
+}
