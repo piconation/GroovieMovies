@@ -16,14 +16,14 @@
                 });
             }
 
-        function moviePageController(movieService, $scope) {
+        function moviePageController(movieService, $scope, $mdDialog, toastr) {
             var vm = this;
             vm.send = send; 
             vm.random = random;
 
             vm.title4 = 'Warn';
-             console.log('movieService');
-
+             console.log(movieService);
+            vm.toastr = toastr;
 
             // this is doing nothing
             var theActors = $scope.theActors;
@@ -36,6 +36,7 @@
             function send(movieName) {
                 // this is calling are service and giveing us accsess to the varibles 
                 movieService.getMovie(movieName).success(function(response){
+                    toastr.info(movieName ,"you have selected");
                     var theMovie = response;
                     console.log(response);
                     console.log(theMovie.Actors);
@@ -45,22 +46,18 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
-               }); 
+               });   
+    //              $scope.showSimpleToast = function() {
+    // var pinTo = $scope.getToastPosition();
 
-                   function random(movieFlick) {
-                    // this is calling are service and giveing us accsess to the varibles 
-                         movieService.random(movieFlick).success(function(response){
-                            var theFlick = random;
+    // $mdToast.show(
+    //   $mdToast.simple()
+    //     .textContent('Simple Toast!')
+    //     .position(pinTo )
+    //     .hideDelay(3000)
+    // );
+  // };
 
-                        // this is setting varibles to are scope from service
-                        $scope.theActors = theFlick.Actors;
-                        $scope.theGenre = theFlick.Genre;
-                        $scope.theTitle = theFlick.Title;
-                        $scope.thePlot = theFlick.Plot;
-                        $scope.theYear = theFlick.Year;
-                   });
-
-               }       
             } 
                               
         }      
