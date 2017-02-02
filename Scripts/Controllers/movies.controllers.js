@@ -4,7 +4,7 @@
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
                 controller: moviePageController,
-                constollerAs: 'vm'
+                controllerAs: 'vm'
                 
             })
             .config(moviePageConfig);
@@ -45,6 +45,7 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
+
                }); 
 
                    function random(movieFlick) {
@@ -61,6 +62,7 @@
                    });
 
                }       
+
             } 
                               
         }      

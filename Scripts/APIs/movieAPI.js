@@ -18,6 +18,7 @@
                         var theMovie = response;
                         // console.log(theMovie.Actors);
                         });
+
                             // console.log(go here);
 
                         getFlick: function(movieFlick){
@@ -30,6 +31,7 @@
                             console.log(theMovie.Actors);
                             });
                         }
+
                     }
 
                 }
