@@ -50,28 +50,10 @@
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
 
-                }); 
-            }
+               });   
 
-                    function random(movieFlick) {
-                        // this is calling are service and giveing us accsess to the varibles 
-                        flickService.random(movieFlick).success(function(response){
-                            var theFlick = response;
-
-                            console.log(response)
-                            console.log(theFlick.Actors);
-
-                        // this is setting varibles to are scope from service
-                        $scope.theActors = theFlick.Actors;
-                        $scope.theGenre = theFlick.Genre;
-                        $scope.theTitle = theFlick.Title;
-                        $scope.thePlot = theFlick.Plot;
-                        $scope.theYear = theFlick.Year;
-                       });
-                }   
-                
-        }        
-    
-
+            } 
+        };
+                                   
 })();
 
