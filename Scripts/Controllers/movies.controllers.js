@@ -49,20 +49,9 @@
                     $scope.theYear = theMovie.Year;
 
                });   
-    //              $scope.showSimpleToast = function() {
-    // var pinTo = $scope.getToastPosition();
-
-    // $mdToast.show(
-    //   $mdToast.simple()
-    //     .textContent('Simple Toast!')
-    //     .position(pinTo )
-    //     .hideDelay(3000)
-    // );
-  // };
-
 
             } 
-        }
+        };
                                    
 })();
 
