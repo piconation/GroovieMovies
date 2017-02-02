@@ -18,6 +18,16 @@
                         var theMovie = response;
                         // console.log(theMovie.Actors);
                         });
+
+                    random: function(movieFlick){
+                        // this is our call to pull down the api
+                        return $http.get('http://www.omdbapi.com/?t=' + math.random)
+                        .success(function(reply){
+                        var actors = reply.Actors;
+                        // console.log(response);
+                        var theFlick = reply;
+                        // console.log(theMovie.Actors);
+                        });
                     }
                 };
         

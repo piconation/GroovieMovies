@@ -44,7 +44,22 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
-               });     
+               });
+
+            function gimme(movieFlick) {
+                // this is calling are service and giveing us accsess to the varibles 
+                movieService.random(movieFlick).success(function(response){
+                    var theFlick = response;
+                    console.log(response);
+                    console.log(theMovie.Actors);
+                    // this is setting varibles to are scope from service
+                    $scope.theActors = theMovie.Actors;
+                    $scope.theGenre = theMovie.Genre;
+                    $scope.theTitle = theMovie.Title;
+                    $scope.thePlot = theMovie.Plot;
+                    $scope.theYear = theMovie.Year;
+               });   
+
             } 
                               
         }      
