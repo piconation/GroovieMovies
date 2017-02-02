@@ -36,12 +36,10 @@ body {
 }
 
 .main {
-
 	background-position: center top;
 	background-size: 100%;
 	background-color: #3d3d3d;
 	height: auto;
-	width: auto;
 	background-repeat: no-repeat;
 }
 
