@@ -3,7 +3,7 @@
     // this CREATES the myApp module (because it has the second, array parameter)
 
 
-   angular.module('myApp', ['ui.router', 'ngMaterial', 'jkAngularCarousel', 'ngMessages'])
+   angular.module('myApp', ['ui.router', 'ngMaterial', 'jkAngularCarousel', 'ngMessages', 'ngMdIcons','toastr'])
 
 
         .config(function($urlRouterProvider, $stateProvider){

@@ -16,12 +16,14 @@
                 });
             }
 
-        function moviePageController(movieService, $scope) {
+        function moviePageController(movieService, $scope, $mdDialog, toastr) {
             var vm = this;
             vm.send = send; 
 
             vm.title4 = 'Warn';
              console.log(movieService);
+
+            vm.toastr = toastr;
 
 
             // this is doing nothing
@@ -35,6 +37,7 @@
             function send(movieName) {
                 // this is calling are service and giveing us accsess to the varibles 
                 movieService.getMovie(movieName).success(function(response){
+                    toastr.info(movieName ,"you have selected");
                     var theMovie = response;
                     console.log(response);
                     console.log(theMovie.Actors);
@@ -45,10 +48,18 @@
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
 
-               }); 
+               });   
+    //              $scope.showSimpleToast = function() {
+    // var pinTo = $scope.getToastPosition();
 
+    // $mdToast.show(
+    //   $mdToast.simple()
+    //     .textContent('Simple Toast!')
+    //     .position(pinTo )
+    //     .hideDelay(3000)
+    // );
+  // };
 
-               }       
 
             } 
                                    
