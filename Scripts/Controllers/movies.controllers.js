@@ -58,11 +58,11 @@
                             console.log(theFlick.Actors);
 
                         // this is setting varibles to are scope from service
-                        $scope.theActors = theFlick.Actors;
-                        $scope.theGenre = theFlick.Genre;
-                        $scope.theTitle = theFlick.Title;
-                        $scope.thePlot = theFlick.Plot;
-                        $scope.theYear = theFlick.Year;
+                        $scope.theActor = theFlick.Actors;
+                        $scope.theGenres = theFlick.Genre;
+                        $scope.theTitles = theFlick.Title;
+                        $scope.thePlots = theFlick.Plot;
+                        $scope.theYears = theFlick.Year;
                        });
                 }   
                 
