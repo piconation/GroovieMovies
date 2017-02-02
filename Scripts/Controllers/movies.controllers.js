@@ -18,7 +18,8 @@
 
         function moviePageController(movieService, $scope) {
             var vm = this;
-            vm.send = send;
+            vm.send = send; 
+            vm.random = random;
 
             vm.title4 = 'Warn';
              console.log('movieService');
@@ -44,7 +45,22 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
-               });     
+               }); 
+
+                   function random(movieFlick) {
+                    // this is calling are service and giveing us accsess to the varibles 
+                         movieService.random(movieFlick).success(function(response){
+                            var theFlick = random;
+
+                        // this is setting varibles to are scope from service
+                        $scope.theActors = theFlick.Actors;
+                        $scope.theGenre = theFlick.Genre;
+                        $scope.theTitle = theFlick.Title;
+                        $scope.thePlot = theFlick.Plot;
+                        $scope.theYear = theFlick.Year;
+                   });
+
+               }       
             } 
                               
         }      
