@@ -1,18 +1,19 @@
+
 Welcome to Groovie Movies. We hope you enjoy your stay.
 
-<md-card layout="column" layout-align="center center">
-	<jk-carousel
-		data="dataArray"
-		item-template-url="'Templates/carousel.template.html'"
-		max-width="225%" 
-		max-height="335%"
-		auto-slide="true"
-    auto-slide-time="3000">
-	</jk-carousel>
-</md-card>
-
-
-<md-card2 layout="column" layout-align="center center">
+<div class="home-page">
+	<md-card layout="column" layout-align="center center" style="padding-bottom: 10px">
+		<jk-carousel
+			data="dataArray"
+			item-template-url="'Templates/carousel.template.html'"
+			max-width="225%" 
+			max-height="335%"
+			auto-slide="true"
+	        auto-slide-time="3000">
+		</jk-carousel>
+	</md-card>
+  
+  <md-card2 layout="column" layout-align="center center">
 	<middle>
 		Groovie Movies is your one stop shop for information on all of your favorite movies. Just click on the movies button on the navigation bar above, enter the name of the movie you want information on and "VOILA!", you've got information coming out of your ears.
 	</middle>
@@ -29,3 +30,4 @@ Welcome to Groovie Movies. We hope you enjoy your stay.
 		document.write(year)
 	</script>
 </md-card3>
+</div>
