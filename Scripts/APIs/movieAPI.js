@@ -19,13 +19,8 @@
                         // console.log(theMovie.Actors);
                         });
 
-                            // console.log(go here);
-
-
                     }
 
                 };
             }          
     })();
-
-    

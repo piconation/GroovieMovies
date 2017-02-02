@@ -16,16 +16,18 @@
                 });
             }
 
-        function moviePageController(movieService, $scope, $mdDialog, toastr) {
+
+        function moviePageController(movieService, flickService, $scope) {
+
             var vm = this;
             vm.send = send; 
 
             vm.title4 = 'Warn';
-             console.log(movieService);
 
-            vm.toastr = toastr;
+             console.log('movieService');
+             console.log('flickService');
 
-
+         
             // this is doing nothing
             var theActors = $scope.theActors;
             var theGenre = $scope.theGenre;
@@ -48,20 +50,28 @@
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
 
-               });   
-    //              $scope.showSimpleToast = function() {
-    // var pinTo = $scope.getToastPosition();
+                }); 
+            }
 
-    // $mdToast.show(
-    //   $mdToast.simple()
-    //     .textContent('Simple Toast!')
-    //     .position(pinTo )
-    //     .hideDelay(3000)
-    // );
-  // };
+                    function random(movieFlick) {
+                        // this is calling are service and giveing us accsess to the varibles 
+                        flickService.random(movieFlick).success(function(response){
+                            var theFlick = response;
 
+                            console.log(response)
+                            console.log(theFlick.Actors);
 
-            } 
-                                   
+                        // this is setting varibles to are scope from service
+                        $scope.theActors = theFlick.Actors;
+                        $scope.theGenre = theFlick.Genre;
+                        $scope.theTitle = theFlick.Title;
+                        $scope.thePlot = theFlick.Plot;
+                        $scope.theYear = theFlick.Year;
+                       });
+                }   
+                
+        }        
+    
+
 })();
 
