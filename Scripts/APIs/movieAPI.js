@@ -6,7 +6,7 @@
             function movieService($http){
                 var vm = this;
                // return is retrun api call to movieName
-
+                
                 return{
 
                     getMovie: function(movieName){
@@ -14,13 +14,13 @@
                         return $http.get('http://www.omdbapi.com/?t=' + movieName)
                         .success(function(response){
                         var actors = response.Actors;
-                        // console.log(response);
+                        console.log(response);
                         var theMovie = response;
                         // console.log(theMovie.Actors);
                         });
 
                     }
 
-                }
+                };
             }          
     })();
