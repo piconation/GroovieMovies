@@ -19,7 +19,6 @@
         function moviePageController(movieService, $scope, $mdDialog, toastr) {
             var vm = this;
             vm.send = send; 
-            vm.random = random;
 
             vm.title4 = 'Warn';
              console.log(movieService);
