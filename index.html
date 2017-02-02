@@ -5,41 +5,54 @@
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="Stylesheets/stylesheet.css">
   <link href="node_modules/angular-jk-carousel/dist/jk-carousel.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 </head>
 <body>
 
+
+
+<!-- angular  -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="https://npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
 
 
+
+<!-- controllers -->
 <!-- app.js must be FIRST, since the component is added to it -->
 <script src="app.js"></script>
+
 <script src="Scripts/Controllers/home.controllers.js"></script>
 <script src="Scripts/Controllers/movies.controllers.js"></script>
 <script src="Scripts/APIs/movieAPI.js"></script>
-<script src="node_modules/angular-jk-carousel/dist/jk-carousel.js"></script>
+
 
 <!-- Angular Material Library -->
 <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<script src="node_modules/angular-jk-carousel/dist/jk-carousel.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script> 
+<div class="index-page">
 
 
-<div class="title-banner">
-	<div class="title-words">
-		GROOVIE MOVIES
-	</div>
+  <div class="title-banner">
+  	<div class="title-words">
+  		GROOVIE MOVIES
+  	</div>
+  </div>
+
+  <!-- static navbar -->
+  <div class="home-navbar">
+  	<ul>
+  	  <li><a class="active" ui-sref="home">Home</a></li>
+  	  <li><a ui-sref="movie">Movies</a></li>
+  	</ul>
+  </div>
+
+
 </div>
-
-<!-- static navbar -->
-<div class="home-navbar">
-	<ul>
-	  <li><a class="active" ui-sref="home">Home</a></li>
-	  <li><a ui-sref="movie">Movies</a></li>
-	</ul>
-</div>
-
 <div class="main">
 <div class="main-body">
   
