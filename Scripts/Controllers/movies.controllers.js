@@ -4,7 +4,7 @@
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
                 controller: moviePageController,
-                controllerAs: 'vm'
+                constollerAs: 'vm'
                 
             })
             .config(moviePageConfig);
@@ -20,14 +20,12 @@
         function moviePageController(movieService, flickService, $scope) {
 
             var vm = this;
-            vm.send = send; 
+            vm.send = send;
 
             vm.title4 = 'Warn';
 
              console.log('movieService');
-             console.log('flickService');
 
-         
             // this is doing nothing
             var theActors = $scope.theActors;
             var theGenre = $scope.theGenre;
@@ -49,11 +47,9 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
-
                });   
 
             } 
         };
-                                   
 })();
 
