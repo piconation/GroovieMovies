@@ -36,12 +36,10 @@ body {
 }
 
 .main {
-
 	background-position: center top;
 	background-size: 100%;
 	background-color: #3d3d3d;
 	height: auto;
-	width: auto;
 	background-repeat: no-repeat;
 }
 
@@ -124,6 +122,7 @@ li a {
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
+    font-size: 3vw;
 }
 
 li a:hover {
