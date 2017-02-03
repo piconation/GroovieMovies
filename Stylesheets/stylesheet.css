@@ -1,53 +1,30 @@
 body {
-	background-color: #dadee5;
-	font-family: Verdana, Geneva, sans-serif;
+
+	background-color: #383838;
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-family: 'Barrio', cursive;*/
 	text-decoration: none;
 	margin: auto;
+	color: #ffffff;
 }
-
-@media screen and (min-width: 801px) {
-		.title-words {
-			font-size: 450%;
-		}
-	}
-
-@media screen and (max-width: 800px) {
-		.title-words {
-			font-size: 350%;
-		}
-	}
-
-@media screen and (max-width: 550px) {
-		.title-words {
-			font-size: 300%;
-		}
-	}
-
-@media screen and (max-width: 450px) {
-		.title-words {
-			font-size: 190%;
-		}
-	}
-
-@media screen and (max-width: 400px) {
-		.title-words {
-			font-size: 150%;
-		}
-	}
+.index-page{
+		font-family: 'Barrio', cursive;
+}
 
 .title-banner {
 	background-image: url("http://previews.123rf.com/images/adroach/adroach0804/adroach080400007/2864037-Colorful-Flower-Spiral-Background-Stock-Vector-flower-power-vector.jpg");
 	background-position: center;
-	padding: 8%;
+	padding: 6%;
 }
 
 .title-words {
+	font-size: 6vw;
 	font-weight: 600;
 	color: #000000;
 	background-color: #ffffff;
 	border-radius: 50px;
 	text-align: center;
-	padding: 4%;
+	padding: 3%;
 	opacity: 0.8;
 }
 
@@ -60,30 +37,33 @@ body {
 
 .main {
 
-	background-image: url("https://unicityinternationalblog.files.wordpress.com/2012/12/unicity-logo.jpg");
 	background-position: center top;
 	background-size: 100%;
-	background-repeat: no-repeat;
+	background-color: #3d3d3d;
 	height: auto;
+	width: auto;
+	background-repeat: no-repeat;
 }
 
-/*.main-body {
-	font-weight: 600;
-	color: #000000;
-	background-color: #f9f9f9;
+.main-body {
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4vw;
+	color: #ffffff;
 	padding: 20px;
-	opacity: 0.7;
 	height: 100%;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+}
+
+.actors {
+	padding-bottom: 40%;
 }
 
 #movie-input {
-	opacity: 1;
+	border-width: 0.5px;
+	border-color: #aaaaaa;
 }
 
-#enter {
+/*#enter {
     background-color: #ffffff;
     color: #ffffff;
     border-radius: 10px;
@@ -91,9 +71,37 @@ body {
 }*/
 
 md-card {
-  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
   left: 0;
   right: 0;
+  border-radius: 50px;
+}
+
+md-card2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 20%;
+  width: auto;
+  padding: 2%;
+  background-color: #ffee82;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 50px;
+}
+
+md-card3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 20%;
+  width: auto;
+  padding: 2%;
+  background-color: #ffee82;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 50px;
 }
 
 ul {
@@ -114,12 +122,12 @@ li a {
     color: white;
     font-weight: bolder;
     text-align: center;
-    padding: 20px 20px;
+    padding: 15px 15px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #688ee8;
+    background-color: #8eb6ff;
 }
 
 

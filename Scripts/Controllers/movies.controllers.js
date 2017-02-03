@@ -4,7 +4,7 @@
             .component('movie', { // the tag for using this is <char-detail>
                 templateUrl: "Templates/movie.template.html",
                 controller: moviePageController,
-                constollerAs: 'vm'
+                controllerAs: 'vm'
                 
             })
             .config(moviePageConfig);
@@ -16,16 +16,18 @@
                 });
             }
 
+
         function moviePageController(movieService, flickService, $scope) {
+
             var vm = this;
             vm.send = send; 
-            vm.random = random;
 
             vm.title4 = 'Warn';
+
              console.log('movieService');
              console.log('flickService');
 
-
+         
             // this is doing nothing
             var theActors = $scope.theActors;
             var theGenre = $scope.theGenre;
@@ -37,6 +39,7 @@
             function send(movieName) {
                 // this is calling are service and giveing us accsess to the varibles 
                 movieService.getMovie(movieName).success(function(response){
+                    toastr.info(movieName ,"you have selected");
                     var theMovie = response;
                     console.log(response);
                     console.log(theMovie.Actors);
@@ -46,6 +49,7 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
+
                 }); 
             }
 
@@ -68,5 +72,6 @@
                 
         }        
     
+
 })();
 
