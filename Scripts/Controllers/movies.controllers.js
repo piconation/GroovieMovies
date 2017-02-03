@@ -17,7 +17,7 @@
             }
 
 
-        function moviePageController(movieService, flickService, $scope) {
+        function moviePageController(movieService,$scope) {
 
             var vm = this;
             vm.send = send; 
@@ -53,7 +53,7 @@
                });   
 
             } 
-        };
+        }
                                    
 })();
 

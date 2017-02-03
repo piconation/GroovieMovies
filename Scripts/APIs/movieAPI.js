@@ -19,6 +19,10 @@
                         // console.log(theMovie.Actors);
                         });
 
+// <<<<<<< HEAD
+                        
+// =======
+// >>>>>>> d613cf6449270cea2976dc3620a1a3c1b4f63791
                     }
 
                 };
