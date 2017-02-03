@@ -47,7 +47,32 @@
                     $scope.theTitle = theMovie.Title;
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
+
+
+//                 }); 
+//             }
+
+//                     // function random(movieFlick) {
+//                         // this is calling are service and giveing us accsess to the varibles 
+//                         // flickService.random(movieFlick).success(function(response){
+//                         //     var theFlick = response;
+
+//                             // console.log(response)
+//                             // console.log(theFlick.Actors);
+
+//                         // this is setting varibles to are scope from service
+//                        //  $scope.theActor = theFlick.Actors;
+//                        //  $scope.theGenres = theFlick.Genre;
+//                        //  $scope.theTitles = theFlick.Title;
+//                        //  $scope.thePlots = theFlick.Plot;
+//                        //  $scope.theYears = theFlick.Year;
+//                        // });
+//                 }   
+                
+//         }        
+    
                });   
+
 
             } 
         };
