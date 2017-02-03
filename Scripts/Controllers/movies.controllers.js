@@ -17,7 +17,7 @@
             }
 
 
-        function moviePageController(movieService, flickService, $scope) {
+        function moviePageController(movieService, $scope) {
 
             var vm = this;
             vm.send = send;
@@ -37,7 +37,7 @@
             function send(movieName) {
                 // this is calling are service and giveing us accsess to the varibles 
                 movieService.getMovie(movieName).success(function(response){
-                    toastr.info(movieName ,"you have selected");
+                    // toastr.info(movieName ,"you have selected");
                     var theMovie = response;
                     console.log(response);
                     console.log(theMovie.Actors);
