@@ -16,13 +16,15 @@
                 });
             }
 
-        function moviePageController(movieService, $scope, $mdDialog, toastr) {
+
+        function moviePageController(movieService, flickService, $scope) {
+
             var vm = this;
             vm.send = send;
 
             vm.title4 = 'Warn';
-             console.log(movieService);
-            vm.toastr = toastr;
+
+             console.log('movieService');
 
             // this is doing nothing
             var theActors = $scope.theActors;
@@ -46,18 +48,8 @@
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
                });   
-    //              $scope.showSimpleToast = function() {
-    // var pinTo = $scope.getToastPosition();
 
-    // $mdToast.show(
-    //   $mdToast.simple()
-    //     .textContent('Simple Toast!')
-    //     .position(pinTo )
-    //     .hideDelay(3000)
-    // );
-  // };
             } 
-                              
-        }      
+        };
 })();
 
