@@ -1,29 +1,92 @@
 <html ng-app="myApp">
 <head>
+  <link href="node_modules/angular-jk-carousel/dist/jk-carousel.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="Stylesheets/stylesheet.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="Stylesheets/stylesheet.css">
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 
 </head>
 <body>
 
+
+
+<!-- angular  -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="https://npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
 
+
+
+<!-- controllers -->
 <!-- app.js must be FIRST, since the component is added to it -->
 <script src="app.js"></script>
+
 <script src="Scripts/Controllers/home.controllers.js"></script>
 <script src="Scripts/Controllers/movies.controllers.js"></script>
 <script src="Scripts/APIs/movieAPI.js"></script>
-<!-- static navbar -->
-<div class="HomeNavbar">
-	<button href="#homePage">Home</button>
-	<button href="#moviePage" >Movie</button>
+
+
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script> <script src="node_modules/angular-jk-carousel/dist/jk-carousel.js"></script>
+
+<div class="index-page">
+
+
+
+<div class="title-banner">
+	<div class="title-words">
+		<i class="fa fa-film fa-spin fa-.5x" aria-hidden="true">
+		</i><span class="sr-only"></span>
+			GROOVIE MOVIES 
+		<i class="fa fa-film fa-spin fa-.5x" aria-hidden="true"></i>
+		<span class="sr-only"></span>
+	</div>
 </div>
 
+  <!-- static navbar -->
+  <div class="home-navbar">
+  	<ul>
+  	  <li><a class="active" ui-sref="home">Home</a></li>
+  	  <li><a ui-sref="movie">Movies</a></li>
+  	</ul>
+  </div>
 
-<!-- <ui-view></ui-view> -->
-<home></home>
 
-	Hi Everyone
+</div>
+<div class="main">
+<div class="main-body">
+  
+<!-- <movie></movie> -->
+
+<ui-view></ui-view>
+
+</div>
+</div>
+
+<!-- <div class="carousel-demo">
+     <ul rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-pause-on-hover rn-carousel-buffered class="carousel2">
+         <li ng-repeat="slide in slides2 track by slide.id" ng-class="'id-' + slide.id">
+                            <div ng-style="{'background-image': 'url(' + slide.img + ')'}"  class="bgimage">
+                              #{{ slide.id }}
+                            </div>
+                        </li>
+                    </ul>
+                    <div rn-carousel-indicators ng-if="slides2.length > 1" slides="slides2" rn-carousel-index="carouselIndex2"></div>
+                </div> -->
 
 </body>
 </html>
