@@ -5,10 +5,13 @@ body {
 	/*font-family: 'Barrio', cursive;*/
 	text-decoration: none;
 	margin: auto;
-	color: #ffffff;
+	color: green;
 }
 .index-page{
 		font-family: 'Barrio', cursive;
+}
+.card1{
+ color:blue;
 }
 
 .title-banner {
@@ -16,7 +19,10 @@ body {
 	background-position: center;
 	padding: 6%;
 }
-
+.textstuff{
+  color: white;
+  width: 600px;
+}
 .title-words {
 	font-size: 6vw;
 	font-weight: 600;
@@ -39,21 +45,21 @@ body {
 	background-position: center top;
 	background-size: 100%;
 	background-color: #3d3d3d;
-	height: auto;
+	height: 100;
 	background-repeat: no-repeat;
 }
 
 .main-body {
 	font-weight: 400;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 4vw;
+	font-size: 22;
 	color: #ffffff;
-	padding: 20px;
+	/*padding: 20px;*/
 	height: 100%;
 }
 
 .actors {
-	padding-bottom: 40%;
+	/*padding-bottom: 40%;*/
 }
 
 #movie-input {
@@ -73,33 +79,38 @@ md-card {
   margin-bottom: 5%;
   left: 0;
   right: 0;
-  border-radius: 50px;
+  border-radius: 111px;
+  background-color: #FF6B00;
+  padding: 40px;
+}
+.card1 {
+
+height: 355px;
+width: 99%
 }
 
-md-card2 {
-  margin-top: 5%;
+.card2 {
+/*  margin-top: 5%;
   margin-bottom: 5%;
   height: 20%;
   width: auto;
   padding: 2%;
-  background-color: #ffee82;
   border-width: 1px;
   border-style: solid;
   border-color: #000000;
-  border-radius: 50px;
+  border-radius: 50px;*/
 }
 
-md-card3 {
-  margin-top: 5%;
+.card3 {
+  /*margin-top: 5%;
   margin-bottom: 5%;
   height: 20%;
   width: auto;
   padding: 2%;
-  background-color: #ffee82;
   border-width: 1px;
   border-style: solid;
   border-color: #000000;
-  border-radius: 50px;
+  border-radius: 50px;*/
 }
 
 ul {
@@ -122,11 +133,18 @@ li a {
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
-    font-size: 3vw;
+
+    font-size: 2vw;
 }
 
 li a:hover {
     background-color: #8eb6ff;
 }
+.md-padding {
+	background-color: #3d3d3d;
+}
+.movieform {
+	color: white;
+	
 
-
+}
