@@ -1,18 +1,24 @@
 
 <div class="movie-page">
-	<div>
-		<form ng-submit="$ctrl.send(movieName)">
-			<b>Enter Movie</b>
-			<input id="movie-input" placeholder=" IM a Movie" ng-model="movieName">
+	<div class="movieform" style="color: white">
+			<form  ng-submit="$ctrl.send(movieName)" style="color: white">
+		<!-- 	<b>Enter Movie</b> -->
+			<md-input-container class="md-block" flex-gt-sm="" style="color: white">
+			<b>
+			<input id="movie-input" placeholder="Enter a Movie" ng-model="movieName" style="color: white">
+			</b>
+			</md-input-container>
 			<!-- <button id="enter" type="submit">Enter</button> -->
 			<md-button id="enter" type="submit" class="md-warn md-raised md-hue-3">Enter</md-button>
 		</form>
+
+	</div>
 		<!-- <md-button ng-click="showSimpleToast()">
 	        Show Simple
 	      </md-button> -->
 		<!-- these are calling the pulled variables from the controler -->
 		
-		<div class="title" >
+		<div class="title">
 			<b>Title:</b>
 			{{ theTitle }}
 		</div>
@@ -36,10 +42,18 @@
 			<b>Actor:</b>
 			{{ theActors }}
 		</div>
-		
 	</div>
 
+</div>
 
+
+		<!-- <div>
+			 <md-button class="md-warn md-raised md-hue-2">Warn Hue 2</md-button>
+		</div> -->
+
+
+
+<!-- 
 
 	<div>
 		<form ng-submit="$ctrl.random(movieFlick)">
@@ -52,29 +66,29 @@
 		<div class="title" >
 
 		<b>Title:</b>
-		{{ theTitle }}
+		{{ theTitles }}
 		</div>
 
 		<div class="year" >
 			<b>Year:</b>
-			{{ theYear }}
+			{{ theYears }}
 		</div>
 
 		<div class="actors">
 			<b>Actor:</b>
-			{{ theActors }}
+			{{ theActor }}
 		</div>
 
 		<div class="genre">
 			<b>Genre:</b>
-			{{ theGenre }}
+			{{ theGenres}}
 		</div>
 
 		<div class="plot" >
 			<b>Plot:</b>
-			{{ thePlot }}
+			{{ thePlots }}
 		</div>
 		
 		</div>
-</div>
+</div> --> 
 
