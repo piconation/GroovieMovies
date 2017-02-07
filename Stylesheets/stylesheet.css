@@ -85,12 +85,12 @@ width: 99%
 .card2 {
   margin-top: 5%;
   margin-bottom: 5%;
-  height: 20%;
+  /*height: 20%;*/
   width: auto;
   padding: 2%;
   border-width: 1px;
   border-style: solid;
-  border-color: #000000;
+  border-color: whtie;
   border-radius: 50px;
 }
 
@@ -102,7 +102,7 @@ width: 99%
   padding: 2%;
   border-width: 1px;
   border-style: solid;
-  border-color: #000000;
+  border-color: white;
   border-radius: 50px;
 }
 
