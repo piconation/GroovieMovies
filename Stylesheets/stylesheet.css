@@ -90,6 +90,12 @@ body {
 	border-color: #aaaaaa;
 }
 
+.footer {
+	color: #ffffff;
+	text-align: center;
+	font-size: 2vw;
+}
+
 /*#enter {
     background-color: #ffffff;
     color: #ffffff;
@@ -109,8 +115,8 @@ md-card {
 }
 
 .card1 {
-height: 355px;
-width: 99%
+	height: 355px;
+	width: auto;
 }
 
 .card2 {
