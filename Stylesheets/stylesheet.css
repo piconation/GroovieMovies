@@ -28,7 +28,7 @@ body {
 }
 
 .welcome {
-	padding-top: 30px;
+	padding-top: 7%;
 	font-size: 4vw;
 	font-weight: bold;
 	text-align: center;
@@ -153,7 +153,8 @@ ul {
 
 li {
     float: left;
-    border-right: 1px solid #bbb;
+    border-right: 2px solid #fff;
+    padding-top: 0.5vw;
 }
 
 li a {
@@ -161,9 +162,9 @@ li a {
     color: white;
     font-weight: bolder;
     text-align: center;
-    padding: 15px 15px;
+    padding: 2vw 4vw;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 li a:hover {
