@@ -1,15 +1,17 @@
 body {
-
-	background-color: #383838;
+	background-color: #3d3d3d;
 	font-family: Arial, Helvetica, sans-serif;
 	/*font-family: 'Barrio', cursive;*/
 	text-decoration: none;
 	margin: auto;
 	color: green;
+	height: auto;
 }
+
 .index-page{
 		font-family: 'Barrio', cursive;
 }
+
 .card1{
  color:blue;
 }
@@ -19,12 +21,33 @@ body {
 	background-position: center;
 	padding: 6%;
 }
+
 .textstuff{
   color: white;
   width: 600px;
 }
+
+.welcome {
+	padding-top: 30px;
+	font-size: 4vw;
+	font-weight: bold;
+	text-align: center;
+}
+
+.desc {
+	font-size: 4vw;
+	font-weight: bold;
+	text-align: center;
+}
+
+.author {
+	font-size: 4vw;
+	font-weight: bold;
+	text-align: center;
+}
+
 .title-words {
-	font-size: 6vw;
+	font-size: 8vw;
 	font-weight: 600;
 	color: #000000;
 	background-color: #ffffff;
@@ -67,6 +90,12 @@ body {
 	border-color: #aaaaaa;
 }
 
+.footer {
+	color: #ffffff;
+	text-align: center;
+	font-size: 2vw;
+}
+
 /*#enter {
     background-color: #ffffff;
     color: #ffffff;
@@ -81,12 +110,13 @@ md-card {
   right: 0;
   border-radius: 111px;
   background-color: #FF6B00;
-  padding: 40px;
+  padding: 30px;
+  font-size: 4vw;
 }
-.card1 {
 
-height: 355px;
-width: 99%
+.card1 {
+	height: 355px;
+	width: auto;
 }
 
 .card2 {
@@ -133,18 +163,19 @@ li a {
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
-
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 li a:hover {
     background-color: #8eb6ff;
 }
+
 .md-padding {
 	background-color: #3d3d3d;
 }
+
 .movieform {
 	color: white;
-	
-
 }
+
+

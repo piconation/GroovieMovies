@@ -47,7 +47,6 @@
                     $scope.thePlot = theMovie.Plot;
                     $scope.theYear = theMovie.Year;
 
-
 //                 }); 
 //             }
 
@@ -75,5 +74,6 @@
 
             } 
         }
+
 })();
 
